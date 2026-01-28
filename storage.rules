@@ -1,0 +1,24 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Product images - anyone can read, only sellers can upload
+    match /products/{imageId} {
+      allow read: if true;
+      allow write: if request.auth != null && 
+                   request.resource.size < 5 * 1024 * 1024 && // 5MB limit
+                   request.resource.contentType.matches('image/.*');
+    }
+    
+    // User profile pictures
+    match /users/{userId}/{imageId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Admin storage
+    match /admin/{allPaths=**} {
+      allow read, write: if request.auth != null && 
+                          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+  }
+}

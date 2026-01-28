@@ -1,0 +1,97 @@
+.dart_tool/
+.build/
+.idea/
+.vscode/
+android/.gradle/
+android/local.properties
+build/
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Build outputs
+/build/
+/web/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Build outputs
+/build/
+/web/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Build outputs
+/build/
+/web/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/

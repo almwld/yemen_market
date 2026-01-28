@@ -1,0 +1,24 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_price
+  - ask_delivery
+  - ask_commission
+
+responses:
+  utter_greet:
+    - text: "مرحبا 👋 كيف أساعدك؟"
+    - text: "Hello 👋 how can I help you?"
+
+  utter_delivery:
+    - text: "التوصيل متوفر داخل المدن الرئيسية."
+    - text: "Delivery is available in main cities."
+
+  utter_commission:
+    - text: "عمولة السوق 5٪ من سعر المنتج."
+    - text: "Market commission is 5%."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

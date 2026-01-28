@@ -1,0 +1,12 @@
+{
+  "@@locale": "en",
+  "appName": "Yemen Market",
+  "settings": "Settings",
+  "language": "Language",
+  "darkMode": "Dark Mode",
+  "login": "Login",
+  "logout": "Logout",
+  "products": "Products",
+  "cart": "Cart",
+  "orders": "Orders"
+}

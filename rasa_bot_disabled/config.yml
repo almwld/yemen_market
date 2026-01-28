@@ -1,0 +1,13 @@
+language: ar
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+  epochs: 100
+
+policies:
+- name: MemoizationPolicy
+- name: RulePolicy

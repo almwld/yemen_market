@@ -1,0 +1,10 @@
+Yemen Market is a digital marketplace that connects local Yemeni stores with customers.
+
+Features:
+- Discover nearby stores
+- Shop from trusted sellers
+- Secure payments
+- Seller dashboards
+- Admin-reviewed products
+
+This app supports Arabic and English.

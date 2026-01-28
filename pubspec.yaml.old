@@ -1,0 +1,56 @@
+name: yemen_market
+description: Yemen Market - Online Marketplace
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.14.2
+  cloud_firestore: ^4.15.0
+  firebase_storage: ^11.3.1
+  google_sign_in: ^6.1.5
+  google_sign_in_web: ^0.12.4+4
+  provider: ^6.1.1
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  intl: ^0.19.0
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+  uuid: ^4.3.3
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Assets
+  assets:
+    - assets/images/products/
+    - assets/images/icons/
+    - assets/animations/
+    - assets/lottie/
+  
+  # Fonts (اختياري - لتحسين الخط العربي)
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+  
+  # Web settings (تحسينات للأداء)
+  web:
+    renderer: canvaskit
+    resources:
+      - assets/

@@ -1,0 +1,17 @@
+version: "3.1"
+
+stories:
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: delivery path
+  steps:
+  - intent: ask_delivery
+  - action: utter_delivery
+
+- story: commission path
+  steps:
+  - intent: ask_commission
+  - action: utter_commission

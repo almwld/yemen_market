@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+- story: ترحيب
+  steps:
+    - intent: greeting
+    - action: utter_greeting
+
+- story: سؤال السعر
+  steps:
+    - intent: ask_price
+    - action: utter_price
+
+- story: الأقسام
+  steps:
+    - intent: ask_categories
+    - action: utter_categories
+
+- story: التوصيل
+  steps:
+    - intent: delivery
+    - action: utter_delivery

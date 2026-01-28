@@ -1,0 +1,28 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - مرحبا
+    - السلام عليكم
+    - hi
+    - hello
+
+- intent: ask_price
+  examples: |
+    - كم سعر السكر
+    - سعر الأرز
+    - price of sugar
+    - rice price
+
+- intent: ask_delivery
+  examples: |
+    - هل يوجد توصيل
+    - delivery
+    - توصيل
+
+- intent: ask_commission
+  examples: |
+    - كم العمولة
+    - عمولة السوق
+    - commission

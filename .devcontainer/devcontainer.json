@@ -1,0 +1,37 @@
+{
+  "name": "Yemen Market - Flutter Firebase",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    },
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code",
+        "ms-vscode.vscode-firefox-debug",
+        "ms-edgedevtools.vscode-edge-devtools",
+        "firebase.firebase-vscode"
+      ]
+    }
+  },
+  
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  
+  "forwardPorts": [8080, 3000, 5000],
+  
+  "portsAttributes": {
+    "8080": {
+      "label": "Flutter Web App",
+      "onAutoForward": "openPreview"
+    }
+  },
+  
+  "remoteUser": "vscode"
+}

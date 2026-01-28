@@ -1,0 +1,27 @@
+import 'package:firebase_auth/firebase_auth.dart';
+
+class AuthService {
+  static Future<void> signInAnonymously() async {
+    await FirebaseAuth.instance.signInAnonymously();
+  }
+
+  static Future<void> signInWithEmail(
+    String email,
+    String password,
+  ) async {
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
+  }
+
+  static Future<void> registerWithEmail(
+    String email,
+    String password,
+  ) async {
+    await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
+  }
+}

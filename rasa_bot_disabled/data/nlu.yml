@@ -1,0 +1,25 @@
+version: "3.1"
+
+nlu:
+- intent: greeting
+  examples: |
+    - مرحبا
+    - السلام عليكم
+    - أهلا
+
+- intent: ask_price
+  examples: |
+    - كم سعر المنتج؟
+    - بكم هذا؟
+    - السعر كم
+
+- intent: ask_categories
+  examples: |
+    - ما هي الأقسام؟
+    - ايش المتوفر؟
+    - عرض الأقسام
+
+- intent: delivery
+  examples: |
+    - هل يوجد توصيل؟
+    - كيف التوصيل؟

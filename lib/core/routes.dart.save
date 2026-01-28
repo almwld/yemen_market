@@ -1,0 +1,29 @@
+  GNU nano 8.7         lib/core/routes.dart
+import 'package:flutter/material.dart';
+import '../features/settings/presentation/settings_page.dart';
+import '../features/products/presentation/products_page.dart';
+import '../features/map/presentation/map_page.dart';
+
+final Map<String, WidgetBuilder> appRoutes = {
+  '/settings': (_) => const SettingsPage(),
+  '/products': (_) => ProductsPage(),
+  '/map': (_) => MapPage(),
+};
+
+import '../features/chat/presentation/chat_page.dart';
+import 'package:flutter/material.dart';
+import '../features/settings/presentation/settings_page.dart';
+import '../features/products/presentation/products_page.dart';
+import '../features/map/presentation/map_page.dart';
+
+final Map<String, WidgetBuilder> appRoutes = {
+  '/settings': (_) => const SettingsPage(),
+  '/products': (_) => ProductsPage(),
+  '/map': (_) => MapPage(),
+};
+
+import '../features/chat/presentation/chat_page.dart';
+
+
+import '../features/chat/presentation/chat_page.dart';
+
