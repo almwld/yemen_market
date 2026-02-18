@@ -1,1 +1,28 @@
-(الصيغة الآمنة)
+# ملف إعدادات Codemagic لمشروع يمن ماركت
+workflows:
+  android-release:
+    name: Yemen Market Android Release
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      flutter: stable
+      groups:
+        - firebase_credentials # مجموعة متغيرات البيئة في Codemagic
+    scripts:
+      - name: إعداد ملفات الأندرويد الأساسية
+        script: | 
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > android/local.properties
+      - name: جلب حزم Flutter
+        script: | 
+          flutter packages pub get
+      - name: بناء ملف الـ APK (نسخة الإصدار)
+        script: | 
+          flutter build apk --release --no-codesign
+    artifacts:
+      - build/app/outputs/flutter-apk/*.apk
+    publishing:
+      email:
+        recipients:
+          - admin@yemenmarket.com # سيتم إرسال الرابط لهذا البريد
+        notified: true
+
