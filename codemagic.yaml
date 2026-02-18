@@ -20,9 +20,4 @@ workflows:
           flutter build apk --release --no-codesign
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
-    publishing:
-      email:
-        recipients:
-          - admin@yemenmarket.com # سيتم إرسال الرابط لهذا البريد
-        notified: true
 
